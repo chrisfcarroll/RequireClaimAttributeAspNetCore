@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace RequireClaimAttributeAuthorization
 {
-    /// <summary>An AuthorizeAttribute which allows declarative specification of Claims-based requirements.</summary>
+    /// <summary>An <see cref="AuthorizeAttribute"/> which allows declarative specification of Claims-based requirements.</summary>
     public class RequireClaimAttribute : AuthorizeAttribute
     {
         /// <summary>The <see cref="System.Type"/> that must be satisfied. This value may not be null.</summary>
