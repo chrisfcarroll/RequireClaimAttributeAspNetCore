@@ -68,6 +68,10 @@ namespace RequireClaimAttributeAuthorization
 
     public static class RequireClaimAuthorizationExtensions
     {
+        /// <summary>
+        /// Enable the use of <see cref="RequireClaimAttribute"/> to declare Claims-based Authorization in Attributes of the Controller and/or Action
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddRequireClaimAttributeAuthorization(this IServiceCollection services)
         {
             services.AddAuthorization(o => { o.AddPolicy(RequireClaimAttribute.PolicyName, p => p.AddRequirements(new RequireClaimAuthorizationHandler()) ); });
